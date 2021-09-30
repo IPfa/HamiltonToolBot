@@ -10,7 +10,7 @@ load_dotenv()
 TELEGRAM_TOKEN = os.environ['TELEGRAM_TOKEN']
 CHAT_ID = os.environ['TELEGRAM_CHAT_ID']
 CURRENT_DATE = dt.datetime.now().date()
-UPDATE_TIME = 60 * 60 * 24 * 15
+UPDATE_TIME = 1296000
 UPDATE_TIME_ERROR = 60 * 60 * 24
 HAMOLTON_TOOLS = {
     'Reader Check Plate _1659_\n 21.05.2021': dt.date(2022, 5, 21),
