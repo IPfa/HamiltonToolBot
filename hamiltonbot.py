@@ -13,17 +13,17 @@ CURRENT_DATE = dt.datetime.now().date()
 UPDATE_TIME = 60 * 60 * 24 * 15
 UPDATE_TIME_ERROR = 60 * 60 * 24
 HAMOLTON_TOOLS = {
-    'Reader Check Plate _1659_\n 21.05.2022': dt.date(2022, 5, 21),
-    'Scale WXS _C112364454_\n 09.04.2022': dt.date(2022, 4, 9),
-    'Carrier VK _V0106115_\n 18.05.2023': dt.date(2023, 5, 18),
-    'Carrier SK _V0105708_\n 10.03.2023': dt.date(2023, 3, 10),
-    'IR Sensor _20100710_\n 05.02.2022': dt.date(2022, 2, 5),
-    'HMD _83208494_\n 16.09.2022': dt.date(2022, 9, 16),
-    'Calibration Weight (20 g) _C114466011_\n 15.03.2023': dt.date(2023, 3, 15),
-    'WIKA Pressure Sensor _2280270_\n 25.03.2022': dt.date(2022, 3, 25),
-    'Channel Calibration Tool _3891_\n 13.04.2023': dt.date(2023, 4, 13),
-    '384 Adjustment Tool _1296_\n 29.03.2023': dt.date(2023, 3, 29),
-    '96 Adjustment Tool _1558_\n 25.11.2022': dt.date(2022, 11, 25),
+    'Reader Check Plate _1659_\n 21.05.2021': dt.date(2022, 5, 21),
+    'Scale WXS _C112364454_\n 09.04.2021': dt.date(2022, 4, 9),
+    'Carrier VK _V0106115_\n 18.05.2021': dt.date(2023, 5, 18),
+    'Carrier SK _V0105708_\n 10.03.2021': dt.date(2023, 3, 10),
+    'IR Sensor _20100710_\n 05.02.2022 (exp)': dt.date(2022, 2, 5),
+    'HMD _83208494_\n 16.09.2021': dt.date(2022, 9, 16),
+    'Calibration Weight (20 g) _C114466011_\n 15.03.2021': dt.date(2023, 3, 15),
+    'WIKA Pressure Sensor _2280270_\n 25.03.2021': dt.date(2022, 3, 25),
+    'Channel Calibration Tool _3891_\n 13.04.2021': dt.date(2023, 4, 13),
+    '384 Adjustment Tool _1296_\n 29.03.2021': dt.date(2023, 3, 29),
+    '96 Adjustment Tool _1558_\n 25.11.2020': dt.date(2022, 11, 25),
 }
 bot = telegram.Bot(token=TELEGRAM_TOKEN)
 
