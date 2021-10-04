@@ -10,8 +10,7 @@ load_dotenv()
 TELEGRAM_TOKEN = os.environ['TELEGRAM_TOKEN']
 CHAT_ID = os.environ['TELEGRAM_CHAT_ID']
 CURRENT_DATE = dt.datetime.now().date()
-UPDATE_TIME = 1296000
-UPDATE_TIME_ERROR = 60 * 60 * 24
+UPDATE_TIME = 60 * 60 * 12
 HAMOLTON_TOOLS = {
     'Reader Check Plate _1659_\n 21.05.2021': dt.date(2022, 5, 21),
     'Scale WXS _C112364454_\n 09.04.2021': dt.date(2022, 4, 9),
@@ -46,13 +45,20 @@ def send_report(report):
 
 
 def main():
+    start_point = 0
     while True:
         try:
-            send_report(report_generator(CURRENT_DATE))
-            time.sleep(UPDATE_TIME)
+            half_day_counter = start_point + 0.5
+            if half_day_counter <= 15:
+                start_point = half_day_counter
+                time.sleep(UPDATE_TIME)
+            else:
+                send_report(report_generator(CURRENT_DATE))
+                start_point = 0
+                time.sleep(UPDATE_TIME)
         except Exception as e:
             send_report(f'Возникла ошибка - {e}')
-            time.sleep(UPDATE_TIME_ERROR)
+            time.sleep(UPDATE_TIME)
 
 
 main()
