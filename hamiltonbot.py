@@ -1,6 +1,5 @@
 import datetime as dt
 import os
-import time
 
 import telegram
 from dotenv import load_dotenv
@@ -10,7 +9,6 @@ load_dotenv()
 TELEGRAM_TOKEN = os.environ['TELEGRAM_TOKEN']
 CHAT_ID = os.environ['TELEGRAM_CHAT_ID']
 CURRENT_DATE = dt.datetime.now().date()
-UPDATE_TIME = 60 * 60 * 12
 HAMOLTON_TOOLS = {
     'Reader Check Plate _1659_\n 21.05.2021': dt.date(2022, 5, 21),
     'Scale WXS _C112364454_\n 09.04.2021': dt.date(2022, 4, 9),
@@ -23,6 +21,7 @@ HAMOLTON_TOOLS = {
     'Channel Calibration Tool _3891_\n 13.04.2021': dt.date(2023, 4, 13),
     '384 Adjustment Tool _1296_\n 29.03.2021': dt.date(2023, 3, 29),
     '96 Adjustment Tool _1558_\n 25.11.2020': dt.date(2022, 11, 25),
+    'iSWAP\n 19.08.2021': dt.date(2023, 8, 19),
 }
 bot = telegram.Bot(token=TELEGRAM_TOKEN)
 
@@ -45,20 +44,9 @@ def send_report(report):
 
 
 def main():
-    start_point = 0
-    while True:
-        try:
-            half_day_counter = start_point + 0.5
-            if half_day_counter <= 15:
-                start_point = half_day_counter
-                time.sleep(UPDATE_TIME)
-            else:
-                send_report(report_generator(CURRENT_DATE))
-                start_point = 0
-                time.sleep(UPDATE_TIME)
-        except Exception as e:
-            send_report(f'Возникла ошибка - {e}')
-            time.sleep(UPDATE_TIME)
-
+    try:    
+        send_report(report_generator(CURRENT_DATE))
+    except Exception as e:
+        send_report(f'Возникла ошибка - {e}')
 
 main()
