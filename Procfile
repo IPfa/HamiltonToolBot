@@ -1,1 +1,1 @@
-worker: python hamiltonbot.py
+web: python hamiltonbot.py
