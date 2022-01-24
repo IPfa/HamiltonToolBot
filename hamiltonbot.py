@@ -14,7 +14,7 @@ HAMOLTON_TOOLS = {
     'Scale WXS _C112364454_\n 09.04.2021': dt.date(2022, 4, 9),
     'Carrier VK _V0106115_\n 18.05.2021': dt.date(2023, 5, 18),
     'Carrier SK _V0105708_\n 10.03.2021': dt.date(2023, 3, 10),
-    'IR Sensor _20100710_\n 05.02.2022 (exp)': dt.date(2022, 2, 5),
+    'IR Sensor _20080026_\n 10.01.2023 (exp)': dt.date(2023, 1, 10),
     'HMD _83208494_\n 16.09.2021': dt.date(2022, 9, 16),
     'Calibration Weight (20 g) _C114466011_\n 15.03.2021': dt.date(2023, 3, 15),
     'WIKA Pressure Sensor _2280270_\n 25.03.2021': dt.date(2022, 3, 25),
