@@ -17,7 +17,7 @@ HAMOLTON_TOOLS = {
     'IR Sensor _20080026_\n 10.01.2023 (exp)': dt.date(2023, 1, 10),
     'HMD _83208494_\n 16.09.2021': dt.date(2022, 9, 16),
     'Calibration Weight (20 g) _C114466011_\n 15.03.2021': dt.date(2023, 3, 15),
-    'WIKA Pressure Sensor _2280270_\n 25.03.2021': dt.date(2022, 3, 25),
+    'WIKA Pressure Sensor _1035_\n 11.01.2022': dt.date(2023, 1, 11),
     'Channel Calibration Tool _3891_\n 13.04.2021': dt.date(2023, 4, 13),
     '384 Adjustment Tool _1296_\n 29.03.2021': dt.date(2023, 3, 29),
     '96 Adjustment Tool _1558_\n 25.11.2020': dt.date(2022, 11, 25),
