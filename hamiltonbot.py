@@ -10,7 +10,7 @@ TELEGRAM_TOKEN = os.environ['TELEGRAM_TOKEN']
 CHAT_ID = os.environ['TELEGRAM_CHAT_ID']
 CURRENT_DATE = dt.datetime.now().date()
 HAMOLTON_TOOLS = {
-    'Reader Check Plate _1659_\n 21.05.2021': dt.date(2022, 5, 21),
+    'Reader Check Plate _1529_\n 28.02.2022': dt.date(2023, 2, 27),
     'Scale WXS _C112364454_\n 01.04.2022': dt.date(2023, 4, 1),
     'Carrier VK _V0106115_\n 18.05.2021': dt.date(2023, 5, 18),
     'Carrier SK _V0105708_\n 10.03.2021': dt.date(2023, 3, 10),
