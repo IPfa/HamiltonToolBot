@@ -46,7 +46,7 @@ def main():
     try:
         send_report(report_generator(CURRENT_DATE))
     except Exception as e:
-        send_report(f'Возникла ошибка - {e}')
+        send_report(f'Exception occurred - {e}')
 
 if __name__ == "__main__":
     main()
